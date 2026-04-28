@@ -6,10 +6,8 @@ from langchain_community.vectorstores import Chroma
 from langchain.chains import RetrievalQA
 import tempfile
 
-st.title("🆓 Zero-Cost AI PDF Analyst")
+st.title("AI PDF Analyst")
 
-# 1. Setup Free LLM (Groq)
-# Get a free key at: https://console.groq.com/
 groq_api_key = st.sidebar.text_input("Enter Groq API Key", type="password")
 
 uploaded_file = st.file_uploader("Upload PDF", type="pdf")
